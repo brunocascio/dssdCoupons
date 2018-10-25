@@ -5,26 +5,12 @@ from django.db import models
 
 # Create your models here.
 
-class EmployeeType(models.Model):
-  initials = models.CharField(max_length=5)
-  description = models.CharField(max_length=100)
+class Coupon(models.Model):
+  number = models.IntegerField()
+  used = models.BooleanField()
 
   class Meta:
-    db_table = "employeetype"
+    db_table = "coupon"
 
   def __unicode__(self):
-    return u"%s" % self.description
-
-
-class Employee(models.Model):
-  firstname = models.CharField(max_length=100)
-  surname = models.CharField(max_length=100)
-  email = models.EmailField()
-  password = models.CharField(max_length=100)
-  employeetype = models.ForeignKey(EmployeeType)
-
-  class Meta:
-    db_table = "employee"
-
-  def __unicode__(self):
-    return u"%s" % self.email
+    return u"%s" % self.number
