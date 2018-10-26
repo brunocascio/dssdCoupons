@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn supermercado.wsgi --pythonpath=supermercado --log-file -
