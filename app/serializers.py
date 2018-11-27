@@ -5,4 +5,4 @@ from rest_framework import serializers
 class CouponSerializer(serializers.ModelSerializer):
   class Meta:
     model = Coupon
-    fields = ('id', 'number', 'used')
+    fields = ('id', 'number', 'used', 'discount')
