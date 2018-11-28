@@ -6,7 +6,6 @@ from django.db import models
 # Create your models here.
 
 class Coupon(models.Model):
-  number = models.IntegerField()
   used = models.BooleanField()
   discount = models.IntegerField(default=10)
 
