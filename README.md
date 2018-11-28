@@ -1,12 +1,8 @@
 ## Requerimientos
 
-Tener instalado `python` y `pip`.
+Tener instalado `python3` y `pip3`.
 
-`sudo pip install django djangorestframework`
-
-## Crear migraciones
-
-`python manage.py makemigrations`
+`pip install -r requirements`
 
 ## Correr migraciones
 
@@ -14,4 +10,4 @@ Tener instalado `python` y `pip`.
 
 ## Run Server
 
-`python manage.py runserver`
+`python manage.py runserver 8002`
